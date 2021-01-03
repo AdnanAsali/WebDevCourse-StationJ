@@ -17,34 +17,34 @@
 
     <h1>الرجاء ادخال المعلومات المطلوبة</h1>
 
-    <form action="/login" method="post">
-      <div>
+    <form action="/login" method="get">
+      <div class="firstname-input">
         <label for="firstname">الرجاء ادخال الاسم الاول</label>
-        <input type="text" id="firstname" />
+        <input type="text" name="firstname" id="firstname" />
       </div>
-
-      <div>
+      <div class="lastname-input">
         <label for="lastname">الرجاء ادخال الاسم الثاني</label>
-        <input type="text" id="lastname" />
+        <input type="text" name="lastname" id="lastname" />
       </div>
-      <div>
+      <div class="email-input">
         <label for="email">الرجاء ادخال البريد الالكتروني</label>
-        <input type="email" id="email" />
+        <input type="email" name="email" id="email" />
       </div>
-      <div>
+      <div class="password-input">
         <label for="password">الرجاء ادخال رمز المرور</label>
-        <input type="password" id="password" />
+        <input type="password" name="password" id="password" />
       </div>
-      <div>
+      <div class="phone-input">
         <label for="phone">الرجاء ادخال رقم الهاتف</label>
-        <input type="tel" id="phone" />
+        <input type="tel" name="phone" id="phone" />
       </div>
-      <div>
+      <div class="date-input">
         <label for="birth">الرجاء ادخال تاريخ الميلاد</label>
-        <input type="date" id="birth" />
+        <input type="date" name="date" id="birth" />
       </div>
-      <input type="button" value="ارسل" onclick="msg()" />
-      <button>Submit</button>
+      <div class="submit">
+        <input type="submit" value="ارسل" />
+      </div>
     </form>
 
     <script>
