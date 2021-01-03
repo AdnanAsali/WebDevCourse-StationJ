@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html dir="rtl">
+  <head>
+    <title>Forms</title>
+  </head>
+  <body>
+    <!-- 
+          Title (heading)
+          My first form (Registration system)
+            Input - firstname
+            Input - lastname
+            Input - email
+            Input - password
+            Input - phone number
+            Input - Date
+       -->
+
+    <h1>الرجاء ادخال المعلومات المطلوبة</h1>
+
+    <form action="/login">
+      <div>
+        <label for="firstname">الرجاء ادخال الاسم الاول</label>
+        <input type="text" id="firstname" />
+      </div>
+
+      <div>
+        <label for="lastname">الرجاء ادخال الاسم الثاني</label>
+        <input type="text" id="lastname" />
+      </div>
+      <div>
+        <label for="email">الرجاء ادخال البريد الالكتروني</label>
+        <input type="email" id="email" />
+      </div>
+      <div>
+        <label for="password">الرجاء ادخال رمز المرور</label>
+        <input type="password" id="password" />
+      </div>
+      <div>
+        <label for="phone">الرجاء ادخال رقم الهاتف</label>
+        <input type="tel" id="phone" />
+      </div>
+      <div>
+        <label for="birth">الرجاء ادخال تاريخ الميلاد</label>
+        <input type="date" id="birth" />
+      </div>
+
+      <div>
+        <input type="button" value="ارسل" />
+      </div>
+    </form>
+  </body>
+</html>
