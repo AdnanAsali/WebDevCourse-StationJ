@@ -17,7 +17,7 @@
 
     <h1>الرجاء ادخال المعلومات المطلوبة</h1>
 
-    <form action="/login">
+    <form action="/login" method="post">
       <div>
         <label for="firstname">الرجاء ادخال الاسم الاول</label>
         <input type="text" id="firstname" />
@@ -43,10 +43,14 @@
         <label for="birth">الرجاء ادخال تاريخ الميلاد</label>
         <input type="date" id="birth" />
       </div>
-
-      <div>
-        <input type="button" value="ارسل" />
-      </div>
+      <input type="button" value="ارسل" onclick="msg()" />
+      <button>Submit</button>
     </form>
+
+    <script>
+      function msg() {
+        alert("values submitted");
+      }
+    </script>
   </body>
 </html>
