@@ -1,56 +1,41 @@
 <!DOCTYPE html>
 <html dir="rtl">
   <head>
-    <title>Forms</title>
+    <title>Registration</title>
   </head>
   <body>
-    <!-- 
-          Title (heading)
-          My first form (Registration system)
-            Input - firstname
-            Input - lastname
-            Input - email
-            Input - password
-            Input - phone number
-            Input - Date
-       -->
+    <!-- form
+      input - firstname
+      input - lastname
+      input - email
+      input - password
+  -->
 
-    <h1>الرجاء ادخال المعلومات المطلوبة</h1>
-
-    <form action="/login" method="get">
-      <div class="firstname-input">
-        <label for="firstname">الرجاء ادخال الاسم الاول</label>
-        <input type="text" name="firstname" id="firstname" />
-      </div>
+    <!-- HTTP requests -->
+    <form action="/login" method="POST">
       <div class="lastname-input">
-        <label for="lastname">الرجاء ادخال الاسم الثاني</label>
-        <input type="text" name="lastname" id="lastname" />
+        <label for="first">الرجاء ادخال الاسم الأول</label>
+        <input type="text" name="first-name" id="first" />
       </div>
+
+      <div class="lastname-input">
+        <label for="last">الرجاء ادخال الاسم الاخير</label>
+        <input type="text" name="last-name" id="last" />
+      </div>
+
       <div class="email-input">
         <label for="email">الرجاء ادخال البريد الالكتروني</label>
         <input type="email" name="email" id="email" />
       </div>
+
       <div class="password-input">
         <label for="password">الرجاء ادخال رمز المرور</label>
         <input type="password" name="password" id="password" />
       </div>
-      <div class="phone-input">
-        <label for="phone">الرجاء ادخال رقم الهاتف</label>
-        <input type="tel" name="phone" id="phone" />
-      </div>
-      <div class="date-input">
-        <label for="birth">الرجاء ادخال تاريخ الميلاد</label>
-        <input type="date" name="date" id="birth" />
-      </div>
-      <div class="submit">
-        <input type="submit" value="ارسل" />
+
+      <div class="submit-form">
+        <input type="submit" value="أرسل" />
       </div>
     </form>
-
-    <script>
-      function msg() {
-        alert("values submitted");
-      }
-    </script>
   </body>
 </html>

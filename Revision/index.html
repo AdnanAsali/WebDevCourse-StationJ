@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html dir="rtl">
+  <head>
+    <title>Revision</title>
+  </head>
+  <body>
+    <img
+      src="https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/share%20img/aventador-roadster-facebook-og.jpg"
+      alt="Lamborgini Aventador"
+    />
+
+    <style>
+      img {
+        width: 250px;
+        height: 500px;
+      }
+    </style>
+
+    <!-- 
+        input - firstname
+        input - lastname 
+        input - password
+        validation
+     -->
+
+    <!-- /login?first=adnan&last=asali&password=123123
+    /login -->
+
+    <form action="/login" method="GET">
+      <div>
+        <label for="your_first">ادخل الاسم الاول</label>
+        <input type="text" name="first" id="your_first" required />
+      </div>
+      <div>
+        <label for="lastnameText">ادخل الاسم الاخير</label>
+        <input type="text" name="last" id="lastnameText" required />
+      </div>
+      <div>
+        <label for="passwordText">رمز المرور</label>
+        <input type="password" name="password" id="passwordText" required />
+      </div>
+      <input type="submit" value="أرسل" />
+    </form>
+
+    <!-- 
+        what we have covered
+        inline vs block
+        MDN
+        Forms (Block Level)
+        Inputs
+        Labels
+        Inspector
+        Form Validation
+            required
+            method = GET | POST
+        action
+     -->
+  </body>
+</html>
