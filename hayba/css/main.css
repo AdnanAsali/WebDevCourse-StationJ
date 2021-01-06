@@ -1,0 +1,88 @@
+/* 
+  This is the initialization of my css sheet
+  by removing all the defaults that we dont need 
+*/
+body {
+  margin: 0;
+  background-color: #323c4c;
+  color: white;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* 
+  This is not the best solution, it will break when tried on other screens 
+  Until we take the concept of FlexBox, you shall tweak these two values until
+  it works on you screen
+*/
+.thumbnail-container {
+  margin-right: 600px;
+  margin-top: 270px;
+}
+
+.thumbnail {
+  width: 100%;
+  height: 600px;
+  padding-top: 130px;
+  background-image: url(../assets/images/haybaThumbnail_edit.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+  background-color: #323c4c;
+  background-attachment: fixed;
+}
+
+.series-logo {
+  width: 30%;
+  height: 30%;
+  filter: blur(5px);
+}
+
+.series-logo:hover {
+  filter: blur(0px);
+  transition: 300ms;
+}
+
+.series-logo img {
+  width: 100%;
+  height: 100%;
+}
+
+.action-button {
+  width: 200px;
+  text-align: center;
+  color: white;
+  padding: 10px;
+  margin-right: 20px;
+  border-radius: 30px;
+  border: 2px solid white;
+  margin-bottom: 7px;
+}
+
+.action-button:hover {
+  background-color: white;
+  color: black;
+}
+
+.action-button img {
+  width: 30px;
+  height: 30px;
+}
+
+.trailer {
+  text-align: center;
+  color: white;
+  background-color: #272e3a;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  margin-bottom: 100px;
+}
+
+.trailer-title {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
